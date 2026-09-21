@@ -11,3 +11,5 @@ Taking a screenshot on Linux used to be simple, but standard tools like scrot or
 
 
 Instead, Gamescope shares screen frames through PipeWire—the system's multimedia layer. This utility simply taps straight into that video feed, snatches a single frame from memory, and saves it as a PNG.
+
+you can compile using `gcc -Wall print.c RAWtoPNG.c -o print $(pkg-config --cflags --libs libpipewire-0.3 libpng)`.
